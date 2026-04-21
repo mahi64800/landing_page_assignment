@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnessApp | Responsive Landing Page</title>
+  <meta name="description" content="A responsive landing page for a fictional fitness service created as part of an internship assignment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#hero" class="brand" aria-label="FitnessApp home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L6 12H11L9 21L18 10H13L15 3H12Z" fill="currentColor"></path>
+          </svg>
+        </span>
+        <span>FitnessApp</span>
+      </a>
+
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#download">Get Started</a>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4A8.5 8.5 0 1 0 20 15.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"></circle>
+            <path d="M12 2V4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M12 20V22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M4.93 4.93L6.34 6.34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M17.66 17.66L19.07 19.07" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M2 12H4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M20 12H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M4.93 19.07L6.34 17.66" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M17.66 6.34L19.07 4.93" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+          <span class="sr-only" id="theme-label">Switch to dark mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">Fictional fitness service</span>
+          <h1>A simple fitness app for everyday routines.</h1>
+          <p>Life gets busy, so FitnessApp is designed to make working out feel a little easier. It helps users follow simple plans, track progress, and stay motivated without feeling overwhelmed.</p>
+
+          <div class="button-group">
+            <a href="#download" class="button">Get Started</a>
+            <a href="#features" class="button-outline">Explore Features</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>250K+</strong>
+              <span>Workouts completed</span>
+            </div>
+            <div class="stat-card">
+              <strong>4.9/5</strong>
+              <span>Average member rating</span>
+            </div>
+            <div class="stat-card">
+              <strong>18 min</strong>
+              <span>Average guided session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="FitnessApp preview">
+          <div class="panel-screen">
+            <div class="panel-top">
+              <div>
+                <p>Today&apos;s progress</p>
+                <h3>Weekly energy score</h3>
+              </div>
+              <p>07:30 AM</p>
+            </div>
+
+            <div class="progress-circle">
+              <strong>78%</strong>
+            </div>
+
+            <div class="panel-grid">
+              <div class="panel-chip">
+                <strong>5 workouts</strong>
+                <span>Completed this week</span>
+              </div>
+              <div class="panel-chip">
+                <strong>1,820 kcal</strong>
+                <span>Calories burned</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-mini">
+            <strong>+32%</strong>
+            <p>A small reminder that steady progress matters more than perfect days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Features</span>
+          <h2>Everything needed for a clean and useful fitness experience.</h2>
+          <p>This fictional product focuses on the basics people actually need: clear plans, simple tracking, and helpful motivation.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 5L4 9L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16 5L20 9L16 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 19H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </div>
+            <h3>Adaptive plans</h3>
+            <p>Build a workout schedule based on your goals, available equipment, and the time you have today.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21C12 21 5 16 5 10.5C5 7.46243 7.46243 5 10.5 5C11.933 5 13.2381 5.55357 14.2238 6.45852C15.2094 5.55357 16.5145 5 17.9475 5C20.9851 5 23.4475 7.46243 23.4475 10.5C23.4475 16 16.4475 21 16.4475 21H12Z" transform="translate(-2.2238 0)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <h3>Wellness tracking</h3>
+            <p>Track sleep, recovery, hydration, and effort so every session matches how you feel.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 16L9 11L13 15L20 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12V8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <h3>Progress analytics</h3>
+            <p>See clear trends in performance and habit streaks without digging through cluttered dashboards.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M5 8H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M7 14H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </div>
+            <h3>Daily motivation</h3>
+            <p>Stay consistent with reminders, milestone nudges, and a plan that keeps you moving forward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">About</span>
+          <h2>Built for people who want something simple and practical.</h2>
+          <p>FitnessApp is a fictional service created for this responsive landing page assignment. The idea is to offer a simple way to plan workouts and stay consistent.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card highlight">
+            <h3>Made for everyday use</h3>
+            <p>Whether someone works out at home, in the gym, or while traveling, FitnessApp keeps the experience easy to understand and easy to return to.</p>
+
+            <div class="metrics">
+              <div class="metric">
+                <strong>12+</strong>
+                <span>Workout styles available</span>
+              </div>
+              <div class="metric">
+                <strong>90%</strong>
+                <span>Users report better consistency</span>
+              </div>
+              <div class="metric">
+                <strong>7 days</strong>
+                <span>To build your first routine</span>
+              </div>
+              <div class="metric">
+                <strong>24/7</strong>
+                <span>Access across devices</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-card">
+            <h3>Simple enough to feel natural</h3>
+            <p>The layout is designed to feel clear and friendly, with readable content, quick actions, and a structure that works well across devices.</p>
+
+            <ul class="about-list">
+              <li>Personalized recommendations based on your goals, energy level, and equipment.</li>
+              <li>Short guided sessions for busy weekdays and structured programs for long-term progress.</li>
+              <li>Clean habit tracking that turns small wins into momentum you can see.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What users might say about FitnessApp.</h2>
+          <p>These sample testimonials help show the kind of simple and supportive experience this fictional product is meant to provide.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <span class="rating">5/5</span>
+            <p>"I finally stopped switching between random workouts. FitnessApp gave me a plan that fits my week and keeps me consistent."</p>
+            <div class="person">
+              <span class="avatar">AN</span>
+              <div>
+                <strong>Anika</strong>
+                <span>Marketing Lead</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="rating">5/5</span>
+            <p>"The tracking is simple but really effective. I can see my progress fast, and that keeps me motivated."</p>
+            <div class="person">
+              <span class="avatar">RJ</span>
+              <div>
+                <strong>Ryan</strong>
+                <span>Remote Designer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="rating">5/5</span>
+            <p>"I use it before work most mornings. The sessions are short, focused, and easy to follow on my phone."</p>
+            <div class="person">
+              <span class="avatar">SM</span>
+              <div>
+                <strong>Sophia</strong>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="rating">5/5</span>
+            <p>"It feels like a coach that understands my schedule. I have more structure now without feeling overwhelmed."</p>
+            <div class="person">
+              <span class="avatar">DK</span>
+              <div>
+                <strong>Dev</strong>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <span class="eyebrow">Get started</span>
+            <h2>Start building a healthier routine today.</h2>
+            <p>FitnessApp makes it easier to begin with small steps, stay on track, and feel good about your progress over time.</p>
+          </div>
+
+          <div class="cta-actions">
+            <a href="#" class="button">Get Started</a>
+            <a href="#" class="button-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand-block">
+        <a href="#hero" class="brand" aria-label="FitnessApp home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3L6 12H11L9 21L18 10H13L15 3H12Z" fill="currentColor"></path>
+            </svg>
+          </span>
+          <span>FitnessApp</span>
+        </a>
+        <p class="footer-description">A responsive landing page for a fictional fitness service with a simple, clean, and user-friendly layout.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#download">Get Started</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-note">&copy; 2026 FitnessApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeLabel = document.getElementById("theme-label");
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      document.body.classList.add("dark-mode");
+    }
+
+    function updateThemeToggle() {
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      const label = isDarkMode ? "Switch to light mode" : "Switch to dark mode";
+
+      themeToggle.setAttribute("aria-label", label);
+      themeToggle.setAttribute("aria-pressed", String(isDarkMode));
+      themeLabel.textContent = label;
+    }
+
+    updateThemeToggle();
+
+    themeToggle.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+      updateThemeToggle();
+    });
+  </script>
+</body>
+</html>
